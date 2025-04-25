@@ -1,0 +1,227 @@
+.dashboard {
+    background-color: #f8fafc;
+}
+
+/* Header Styles */
+.dashboard-header {
+    background-color: #4338ca;
+    color: white;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #fef08a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-link {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    font-size: 1rem;
+}
+
+.header-link:hover {
+    color: #fef08a;
+}
+
+.logout-button {
+    background-color: #fbbf24;
+    color: #1e3a8a;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: 600;
+}
+
+.logout-button:hover {
+    background-color: #f59e0b;
+}
+
+/* Main Container Styles */
+.main-section {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Lessons Section Styles */
+.lessons-section {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 2rem;
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .lessons-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.lesson-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    height: 200px;
+}
+
+.lesson-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.lesson-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lesson-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.lesson-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Therapy Section Styles */
+.therapy-section {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 0;
+}
+
+.therapy-card-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .therapy-card-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+.therapy-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.therapy-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+}
+
+.therapy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.therapy-text {
+    color: #475569;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.therapy-button {
+    background-color: #4338ca;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: fit-content;
+}
+
+.therapy-button:hover {
+    background-color: #3730a3;
+}
+
+.therapy-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.therapy-instrument-image {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.2));
+    border-radius: 1rem;
+}
+
+/* Footer Styles */
+.dashboard-footer {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 1.5rem;
+}
+
+.footer-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-text {
+    color: #bfdbfe;
+}

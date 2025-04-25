@@ -1,0 +1,94 @@
+/* Wrapper around the register content */
+.register-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .register-wrapper {
+    flex-direction: row;
+  }
+}
+
+/* Form Section */
+.form-section {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.form-section h2 {
+  font-size: 2rem;
+  color: #1d4ed8;
+  margin-bottom: 1.5rem;
+}
+
+.register-form {
+  display: flex;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #475569;
+}
+
+.register-form input {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 4px rgba(29, 78, 216, 0.5);
+}
+
+.register-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #10b981;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #059669;
+}
+
+.form-section p {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.form-section a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.form-section a:hover {
+  text-decoration: underline;
+}

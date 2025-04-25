@@ -1,0 +1,59 @@
+/* General page styling */
+.about-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures main takes up the full viewport height */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* About content styling */
+.about-content {
+    text-align: center;
+    margin: 40px 0;
+    flex: 1; /* Makes the content section flexible, pushing the footer to the bottom */
+}
+
+.about-content h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    font-size: 1.8em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 40px;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-placeholder {
+    width: 75%;
+    height: 300px;
+    background-color: #17a2b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-top: 2px solid #ccc;
+    margin-top: auto; /* Pushes the footer to the bottom if there is extra space */
+    color: #666;
+}
